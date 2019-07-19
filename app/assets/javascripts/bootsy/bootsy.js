@@ -86,7 +86,7 @@ window.Bootsy.Area = function ($el) {
   };
 
   this.openImageGallery = function (editor) {
-    editor.currentView.element.focus(false);
+    editor.currentView.element.focus();
     self.caretBookmark = editor.composer.selection.getBookmark();
     $('#bootsy_image_gallery').modal('show');
   };
